@@ -20,6 +20,16 @@ function DonateForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (
+      formData.firstName === "" ||
+      formData.lastName === "" ||
+      formData.email === "" ||
+      formData.donationAmount === ""
+    ) {
+      alert("Please fill out all required fields.");
+      return;
+    }
     
     console.log(formData);
     setShowSummary(true); // Show the summary pop-up

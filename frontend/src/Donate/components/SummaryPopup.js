@@ -30,9 +30,9 @@ function SummaryPopup({ formData, handleClose }) {
       intent_id: result.intent_id,
       client_secret: result.client_secret,
       currency: 'AUD',
-      successUrl: "", // FIXME: Paste here
-      failUrl: "", // FIXME: Paste here
-      cancelUrl: "", // FIXME: Paste here
+      successUrl: "./DonationPageMessage",
+      failUrl: "./DonationPageMessage", 
+      cancelUrl: "./DonationPageMessage", 
       logoUrl: ""
     });
   }
